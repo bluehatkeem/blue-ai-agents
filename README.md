@@ -28,24 +28,24 @@ This directory contains Docker configurations for running all the customer suppo
 
 You can run/build agents with Docker compose:
 
-```
-
 #### OpenAI Customer Support agent
 
 ```
 docker-compose up  --build openai-customer-support -d
 ```
 
-
 ## Building Individual Images
 
 If you want to build and run a specific agent without using Docker Compose:
 
-```
+
 # Build the image
+```
 docker build -f agents/openai/customer_support/Dockerfile -t openai-customer-support .
+```
 
 # Run the container
+```
 docker run --env-file agents/openai/customer_support/.env openai-customer-support
 ```
 
