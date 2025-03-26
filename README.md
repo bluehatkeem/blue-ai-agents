@@ -1,6 +1,6 @@
 # Containerized Stripe Agent Toolkit agents
 
-This directory contains Docker configurations for running all the agents in the Stripe Agent Toolkit.
+This directory contains Docker configurations for running all the customer support agent in the Stripe Agent Toolkit.
 
 ## Prerequisites
 
