@@ -11,8 +11,8 @@ This directory contains Docker configurations for running all the customer suppo
 
 1. Clone this repository:
    ```
-   git clone https://github.com/stripe/agent-toolkit.git
-   cd agent-toolkit
+   git clone https://github.com/bluehatkeem/blue-ai-agents.git
+   cd blue-ai-agents
    ```
 
 2. Set up environment files from templates:
