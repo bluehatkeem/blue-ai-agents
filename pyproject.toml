@@ -1,0 +1,40 @@
+[project]
+name = "stripe-agent-toolkit"
+version = "0.6.0"
+description = "Stripe Agent Toolkit"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Stripe", email = "support@stripe.com"}
+]
+keywords = ["stripe", "api", "payments"]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/stripe/agent-toolkit/issues"
+"Source Code" = "https://github.com/stripe/agent-toolkit"
+
+[tool.setuptools.packages.find]
+include = ["stripe_agent_toolkit*"]
+exclude = ["tests*", "agents*"]
+
+[tool.ruff]
+# same as our black config
+line-length = 79
+extend-exclude = ["build"]
+
+[tool.ruff.format]
+# currently the default value, but opt-out in the future
+docstring-code-format = false
+
+[tool.pyright]
+include = [
+  "*",
+]
+exclude = ["build", "**/__pycache__"]
+reportMissingTypeArgument = true
+reportUnnecessaryCast = true
+reportUnnecessaryComparison = true
+reportUnnecessaryContains = true
+reportUnnecessaryIsInstance = true
+reportPrivateImportUsage = true
+reportUnnecessaryTypeIgnoreComment = true

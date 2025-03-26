@@ -1,0 +1,15 @@
+twine
+crewai==0.76.2
+crewai-tools===0.13.2
+flake8
+langchain==0.3.4
+langchain-openai==0.2.2
+mypy==1.7.0
+pydantic>=2.10
+pyright==1.1.350
+python-dotenv==1.0.1
+ruff==0.4.4
+stripe==11.0.0
+openai==1.66.0
+openai-agents==0.0.2
+python-telegram-bot==20.7

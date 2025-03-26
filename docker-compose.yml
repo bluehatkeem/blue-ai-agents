@@ -1,0 +1,10 @@
+services:
+  openai-customer-support:
+    build:
+      context: .
+      dockerfile: agents/openai/customer_support/Dockerfile
+    env_file:
+      - agents/openai/customer_support/.env
+    volumes:
+      - ./agents/openai/customer_support:/app/agents/openai/customer_support
+    command: python /app/agents/openai/customer_support/main.py
